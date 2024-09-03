@@ -1,0 +1,22 @@
+.posts {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+
+    .item {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        &__image {
+            width: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        &__title {
+            font-size: 16px;
+            color: #111;
+        }
+    }
+}

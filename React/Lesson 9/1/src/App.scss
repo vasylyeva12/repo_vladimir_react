@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Sora", sans-serif;
+}
+
+.page-mobile {
+    max-width: 375px;
+    margin: 0 auto;
+}
+
+.header {
+    background: linear-gradient(240.86deg, #111111 0%, #313131 100%);
+    padding: 64px 24px;
+    height: 280px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+
+        span {
+            color: #A2A2A2;
+            font-size: 12px;
+            font-weight: 400;
+        }
+
+        h2 {
+            font-weight: 600;
+            color: #D8D8D8;
+            font-size: 14px;
+        }
+    }
+
+    &__search {
+        display: grid;
+        grid-template-columns: 259px 1fr;
+        gap: 16px;
+    }
+}
+
+.search {
+    position: relative;
+
+    &__input {
+        border: none;
+        background: #2A2A2A;
+        padding: 17.5px 16px 17.5px 44px;
+        color: #A2A2A2;
+        font-size: 14px;
+        border-radius: 12px;
+        width: 100%;
+
+        &::placeholder {
+            color: #A2A2A2;
+            font-size: 14px;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        left: 16px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        color: #fff;
+        font-size: 20px;
+    }
+}
+
+.btn {
+    padding: 16px;
+    border: none;
+    background-color: #C67C4E;
+    border-radius: 12px;
+
+    &-icon {
+        font-size: 20px;
+        color: #fff;
+        display: block;
+    }
+}
+
+.banner {
+    height: 140px;
+    border-radius: 12px;
+    overflow: hidden;
+    bottom: 76px;
+    position: relative;
+
+    &__image {
+        background-image: url("./images/banner.png");
+        display: block;
+        object-fit: cover;
+        width: 100%;
+      
+    }
+}
+
+.content {
+    padding: 0 24px;
+}
